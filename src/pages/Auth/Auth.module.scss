@@ -12,12 +12,10 @@
     background-size: 386px, 386px;
 
     .form {
-        border: 1px solid #ccc;
-        box-shadow: var(--box-shadow);
-        border-radius: 4px;
         width: 40rem;
-        min-height: 400px;
+        min-height: 200px;
         padding: 2.5rem;
+        border-radius: 4px;
         animation: slide-up 0.5s ease;
 
         h2 {
@@ -36,10 +34,11 @@
                 padding: 1rem;
                 margin: 1rem auto;
                 width: 100%;
-                border: 1px solid #777;
+                border: 1px solid var(--color-grey);
                 border-radius: 3px;
                 margin-bottom: 24px;
                 outline: none;
+                background-color: var(--backgroundColor-input);
             }
 
             .links {
@@ -67,6 +66,30 @@
                 color: #fff;
                 background-color: var(--color-primary);
                 cursor: pointer;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+
+            .tranform {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 32px;
+                margin-top: 16px;
+
+                p .link-tranform {
+                    border: none;
+                    border-radius: 4px;
+                    padding: 8px;
+                    background-color: var(--color-orange);
+                    color: #fff;
+
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
             }
         }
 
@@ -82,6 +105,10 @@
             color: #fff;
             background-color: var(--color-logo);
             cursor: pointer;
+
+            &:hover {
+                opacity: 0.9;
+            }
 
             .sub-logo {
                 margin-right: 8px;
@@ -113,11 +140,5 @@
     }
     100% {
         transform: translateY(0);
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .img {
-        display: none;
     }
 }
