@@ -1,0 +1,123 @@
+.auth {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(https://aid-frontend.prod.atl-paas.net/atlassian-id/front-end/5.0.445/static/media/default_left.e74de3ec.svg),
+        url(https://aid-frontend.prod.atl-paas.net/atlassian-id/front-end/5.0.445/static/media/default_right.6ece9751.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: left bottom, right bottom;
+    background-size: 386px, 386px;
+
+    .form {
+        border: 1px solid #ccc;
+        box-shadow: var(--box-shadow);
+        border-radius: 4px;
+        width: 40rem;
+        min-height: 400px;
+        padding: 2.5rem;
+        animation: slide-up 0.5s ease;
+
+        h2 {
+            color: var(--color-logo);
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        form {
+            input[type='text'],
+            input[type='email'],
+            input[type='password'] {
+                display: block;
+                font-size: 1.6rem;
+                font-weight: 300;
+                padding: 1rem;
+                margin: 1rem auto;
+                width: 100%;
+                border: 1px solid #777;
+                border-radius: 3px;
+                margin-bottom: 24px;
+                outline: none;
+            }
+
+            .links {
+                display: flex;
+                justify-content: space-between;
+                margin: 5px 0;
+
+                .link-reset {
+                    color: var(--light-blue);
+                }
+            }
+
+            p {
+                text-align: center;
+                margin: 1rem;
+            }
+
+            .btn-login {
+                width: 100%;
+                height: 38px;
+                border: none;
+                outline: none;
+                border-radius: 4px;
+                margin-bottom: 8px;
+                color: #fff;
+                background-color: var(--color-primary);
+                cursor: pointer;
+            }
+        }
+
+        .btn-sub-login {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 38px;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            color: #fff;
+            background-color: var(--color-logo);
+            cursor: pointer;
+
+            .sub-logo {
+                margin-right: 8px;
+            }
+        }
+
+        .register {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            user-select: none;
+            margin-top: 1rem;
+
+            p {
+                margin-right: 8px;
+                font-family: var(--font-family);
+            }
+
+            .link-register {
+                color: var(--light-blue);
+            }
+        }
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        transform: translateY(-5rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .img {
+        display: none;
+    }
+}
