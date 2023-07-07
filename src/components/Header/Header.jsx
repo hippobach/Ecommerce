@@ -71,9 +71,15 @@ function Header() {
 
                     <div className={cx('header-right')} onClick={handleHideMenu}>
                         <span className={cx('links')}>
-                            <NavLink to="/login">Login</NavLink>
-                            <NavLink to="/register">Register</NavLink>
-                            <NavLink to="/order-history">My Orders</NavLink>
+                            <NavLink to="/login" className={activeLink}>
+                                Login
+                            </NavLink>
+                            <NavLink to="/register" className={activeLink}>
+                                Register
+                            </NavLink>
+                            <NavLink to="/order-history" className={activeLink}>
+                                My Orders
+                            </NavLink>
                         </span>
                         {cart}
                     </div>
