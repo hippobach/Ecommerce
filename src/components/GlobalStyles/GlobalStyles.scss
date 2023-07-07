@@ -3,16 +3,35 @@
 
 :root {
     --font-family: 'Nunito', sans-serif;
+    --dark-blue: #0a1930;
+    --light-blue: #1f93ff;
+
+    --color-logo: orangered;
+
+    --color-white: #fff;
+    --color-dark: #333;
+
+    --color-grey: #eee;
+    --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    --color-purple: #9d0191;
+    --color-orange: #ff7722;
+
+    --color-primary: #007bff;
+    --color-success: #28a745;
 }
 
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    text-decoration: none;
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 10px;
 }
 
 body {
